@@ -87,23 +87,49 @@ My Simple Typewriter Animated Script
 	}
 })(jQuery);
 $(function(){
-	var container = $("#container")
+	var container = $("#me")
 	userText = $('#userText'); 
 	container.shuffleLetters();
 	userText.click(function () {
-	userText.val("");
+		userText.val("");
 	}).bind('keypress',function(e){
-	if(e.keyCode == 13){
-	container.shuffleLetters({
-	"text": userText.val()
-		});
-	userText.val("");
+		if(e.keyCode == 13){
+			$(".d").delay(100).fadeIn(1000)
+			container.shuffleLetters({
+				"text": userText.val()
+					});
+			userText.val("");
 		}
 	}).hide();
 	setTimeout(function(){
 	container.shuffleLetters({
-	"text": "Write text below and hit enter"
+	"text": ""
 		});
 		userText.val("Type and hit Enter here !!").fadeIn();
 	},1000);
 });
+// rcv data
+$(function(){
+	var container = $("#you")
+	// userText = $('#userText'); 
+	// container.shuffleLetters();
+	// userText.click(function () {
+	// 	userText.val("");
+	// }).bind('keypress',function(e){
+	// if(e.keyCode == 13){
+	// container.shuffleLetters({
+	// "text": userText.val()
+	// 	});
+	// userText.val("");
+	// 	}
+	// }).hide();
+	setTimeout(function(){
+	container.shuffleLetters({
+	"text": ""
+		});
+		userText.val("Type and hit Enter here !!").fadeIn();
+	},1000);
+});
+setInterval(function(){
+	$(".d").delay(500).fadeOut(1000)
+}, 3000);
