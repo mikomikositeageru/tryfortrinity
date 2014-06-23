@@ -1,39 +1,26 @@
-var newDIV = true;
-function regiBtn(){
-	$("#login-form").attr('action', './tft-regist.html');
-	//console.log($("#login_form").attr('action'));
-	$("#login-form").submit();
-}
-function loginBtn(){
+var newDIV = true
+function regist(){
 	$.ajax({
-		type:"POST", 
-		url:"../php/tft-login.php", 
+		type:"POST",
+		url:"../php/tft-regist.php",
 		data:{
-			"data-id":$("#lgn-id").val(), 
-			"data-pwd":$("#lgn-pwd").val()
-		}, 
-		success: function(respose){
+			"data-id":$("#lgn-id").val(),
+			"data-pwd":$("#lgn-pwd").val(),
+			"data-nick":$("#lgn-nick").val()
+		}, success: function(respose){
 			//alert(respose);
-			//console.log(respose);
-			if(respose == 'success'){
-				location.href = './index.html';
-				//$('#login_form').attr('action', './main.html');
-				//s$('#login_form').submit();
-				//$.cookie($("#lgn_id").val(), 'first', {expire: 15, path: '/', domain: '', secure: true});			
-			}
-		}
-	});	
-}
-function btnClick(){
-	$("#btn-regi").click(function(){
-		regiBtn();
-	});
-	$("#btn-sign").click(function(){
-		loginBtn();
-	});
-	$("input").keypress(function(e){
-		if(e.keyCode == 13){
-			loginBtn();
+			console.log(respose);
+			/*if(respose == 'success'){
+				alert(respose);
+				$("#regist-form").attr('action', './index.html');
+				$("#regist-form").submit();
+			} else if(respose == 'error_id_exist') {
+				alert("already exist ID");
+			} else if(respose == 'error_id_len'){
+				alert("ID.length > 4. OK?");
+			} else if(respose == 'error_pwd_len'){
+				alert("PWD.length >4 OK?");
+			}*/
 		}
 	});
 }
@@ -72,6 +59,19 @@ function windowResized(){
 }
 function fadein(data){
 	$(data).delay(500).fadeIn(1000);
+}
+function btnClick(){
+	$("#btn-regi").click(function(){
+		regist()
+	});
+	$("#btn-cans").click(function(){
+		window.history.back()
+	});
+	$("input").keypress(function(e){
+		if(e.keyCode == 13){
+			regist();
+		}
+	});
 }
 function init(){
 	fadein('#lg-container')
