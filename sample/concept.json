@@ -1,0 +1,69 @@
+{
+  "rules": {
+    "defender": {
+      "knight": {
+        "r_hand": "onehand_sword",
+        "l_hand": "shield",
+        "head": "helem",
+        "chest": "plate_amor",
+        "shoes": "greve",
+        "acces": "empty"
+      }
+    },
+    "attacker": {
+      "magician": {
+        "hands": "books, staff",
+        "head": "hat",
+        "chest": "robe",
+        "shoes": "boots",
+        "acces": "empty"
+      },
+      "hunter": {
+        "hands": "bow",
+        "head": "hat",
+        "chest": "leather_amor",
+        "shoes": "boots",
+        "acces": "empty"
+      },
+      "assasin": {
+        "r_hand": "short_sword",
+        "l_hand": "dagger, knife",
+        "head": "hood",
+        "chest": "leather_amor",
+        "shoes": "boots",
+        "acces": "empty"
+      }
+    },
+    "healer": {
+      "healer": {
+        "hands": "bible, book, rosario",
+        "head": "circlet",
+        "chest": "robe",
+        "shoes": "boots",
+        "acces": "empty"
+      },
+      "musician": {
+        "hands": "guitar",
+        "head": "headphone",
+        "chest": "school_uniform",
+        "shoes": " low_shoes",
+        "acces": "empty"
+      }
+    }
+  },
+  "status": {
+    "strength": "10 + (rule=? point*2 : point*1)",
+    "agillity": "10 + (rule=? point*2 : point*1)",
+    "intelligent": "10 + (rule=? point*2 : point*1)",
+    "health": "strength*(5+rule.abill)",
+    "mana": "intelligent*(2+rule.abill)",
+    "atk": "(rule.stat/2)+(item)",
+    "def": "(item)",
+    "as": "base.as*(agil*rule.abill)/100"
+  },
+  "stage": {
+    "season-1": "season-1.stage",
+    "saason-2": "season-2.stage",
+    "...": "... will add this rule."
+  }
+}

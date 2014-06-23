@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width"><!--mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /><!--do not zoom-->
+  <title></title>
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./asset/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./asset/css/index.css">
+  <!-- js -->
+  <script type="text/javascript" src="./asset/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./asset/js/bootstrap.js"></script>
+  <script type="text/javascript" src="./asset/js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="./asset/js/login.js"></script>  
+</head>
+<body onload="init()">
+  <div id="whole_center_container" class="container" style="display:none;">
+    <form id="login_form" class="form-signin" method="POST" >
+      <h2 class="form-signin-heading">Please sign in</h2>
+      <input id="lgn_id" type="text" class="form-control lgninput" placeholder="ID" autofocus>
+      <input id="lgn_pwd" type="password" class="form-control lgninput" placeholder="Password">
+      <div class="btn-group" >
+          <button id ="btn_sign" class="btn btn-lg btn-primary" type="button">Sign in</button>
+          <button id ="btn_regi" class="btn btn-lg btn-primary" type="button">Registerss</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width"><!--mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /><!--do not zoom-->
+  <title></title>
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./asset/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./asset/css/index.css">
+  <!-- js -->
+  <script type="text/javascript" src="./asset/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./asset/js/bootstrap.js"></script>
+  <script type="text/javascript" src="./asset/js/regit.js"></script>
+</head>
+<body onload="init()">
+  <!--center-->
+  <div id="whole_center_container" class="container" style="display:none;">
+    <form id="regist_form" class="form-signin" method="POST">
+      <h2 class="form-signin-heading">Please input you'r info</h2>
+      <input id = "text_id" type="text" class="form-control" placeholder="ID" autofocus>
+      <input id="text_pwd" type="password" class="form-control" placeholder="Password">
+      <div class="btn-group" >
+          <button id ="btn_regit" class="btn btn-lg btn-primary" type="button">regist it</button>
+          <button id ="btn_cans" class="btn btn-lg btn-primary" type="button">cancle</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

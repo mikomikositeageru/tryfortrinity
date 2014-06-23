@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"></meta>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"></meta>
+  <meta content="" name="description"></meta>
+  <meta content="" name="author"></meta>
+  <meta name="format-detection" content="telephone=no"></meta>
+  <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+  <title></title>
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./asset/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./asset/css/main.css">
+  <!-- js -->
+  <script type="text/javascript" src="./asset/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="./asset/js/bootstrap.js"></script>
+  <script type="text/javascript" src="./asset/js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="./asset/js/search.js"></script>
+  <script type="text/javascript" src="./asset/js/getuser.js"></script>  
+</head>
+<body onload="init(); getUserInfo();">
+  <div id="body_container" class="body-container">
+    <div id="whole_header_container" class="navbar navbar-inverse navbar-fixed-top">
+      <div id="header_container" class="container">
+        <div id="main_header" class="navbar-header">
+          <button id="main_header_btn" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="user_main_tag" class="navbar-brand" href="./main.html">Login</a>
+          <div class="navbar-header">
+            <ul id="lgn-ul" class="lgn">
+              <li class="lgn">
+                <a mouseover="" style="cursor: pointer;">MyInfo</a>
+              </li>
+              <li class="lgn">
+                <a id="logout_a" mouseover="" style="cursor: pointer;">Logout</a>
+              </li>
+            </ul>
+          </div>          
+        </div>
+        <div id="header_menu_container" class="navbar-collapse collapse" style="height: 1px">
+          <ul id="header_menu" class="nav navbar-nav">
+            <li class="uactive li-block">
+              <a href="./main.html">Main</a>
+            </li>
+            <li class="active li-block">
+              <a href="./search.html">Search</a>              
+            </li>
+            <li class="uactive li-block">
+              <a href="">temp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--center-->
+    <div id="whole_center_container" class="container center-container" style="dispaly: none;">
+      <center class="row">
+        <div class="col-xs-5">
+          <span style="float: left">a</span>
+        </div>
+        <div class="row col-xs-7">
+          <div class="row container">
+            <div class="col-xs-12" style="float: left;">
+              <span style="float: left">탐색</span>
+            </div>
+            <div class="row col-xs-12" style="font-size: 24px">
+              <span class="text-resize" >stage-1.name</span>
+              <div id="search-1" class="col-xs-12" style="float: left;">
+                <div class="progress progress-striped row active step-1" style="height: 30px">
+                  <div class="progress-bar progress-bar-success step-1" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                    <span class="text-center text-danger step-1">탐색</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+    </div>    
+  </div>
+</body>
+<!-- <img src="./asset/resource/img/char/cha1-ok.png" class="img-rounded img-responsive"> -->
+</html>

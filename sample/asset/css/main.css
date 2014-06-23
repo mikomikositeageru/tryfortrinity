@@ -1,0 +1,87 @@
+body {
+  padding-top: 50px;
+  min-height: auto;
+  min-width: 100%;
+
+}
+html {
+	background-color: black;
+	min-height: auto;
+	min-width: 100%;
+	/*사파리 화면 회전시 폰트 고정*/
+	-webkit-text-size-adjust:none;
+}
+.lgn {
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 2px;
+	list-style: none;
+	list-style-type: none;
+}
+/*
+.lgn > li {
+	position: relative;
+	display: block;
+}
+*/
+.lgn > li > a{
+	position: relative;
+	/*display: block;*/
+	padding: 2px 15px;
+	font-size: 80%;
+	color: #999;
+}
+
+/*
+.lgn > li:hover,
+.lgn > li:focus {
+	text-decoration: none;
+	background-color: #eeeeee;
+}
+*/
+.mtv {
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 2px;
+	list-style: none;
+	list-style-type: none;
+}
+.mtv > li {
+	position: relative;
+	/*display: block;*/
+	padding: 2px 15px;
+	font-size: 100%;
+	color: #999;
+}
+.mtv > li:hover,
+.mtv > li:focus {
+	text-decoration: none;
+	background-color: #eeeeee;
+}
+
+.center-container {
+  padding: 40px 15px;
+  text-align: center;
+}
+.mtable {
+	padding: 10px 10px;
+}
+.mtable > tr {
+	padding: 10px 10px;
+}
+.body-container{
+	background-color: black;
+	/*background-image: url('../resource/img/background/back.png');*/
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.li-block{
+	display: block;
+}
+
+#whole_header_container {
+	font-size: 14px;
+}
+#whole_center_container {
+	font-size: 14px;
+}
