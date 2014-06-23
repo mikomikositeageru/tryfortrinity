@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<meta name="viewport" content="width=device-width"><!--mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no" />
+	<!--do not zoom-->
+	<title>Try For Trinity</title>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../css/index.css"> -->
+	<!-- js -->
+	<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/tft-login.js"></script>
+</head>
+<body onload="init()">
+	<div id="lg-container" class="container" style="display:none">
+		<div class="col-xs-4"></div>
+		<div class="col-xs-4">
+			<form action="" id="login_form" class="form-signin" method="POST">
+				<h2 class="form-signin-heading">Please sign in</h2>
+				<input type="text" id="lgn-id" class="form-control id-input" placeholder="ID" type="text" autofocus>
+				<input type="text" id="lgn-pwd" class="form-control pwd-input" placeholder="Password">
+				<div class="btn-group">
+					<button id="btn-sign" class="btn btn-lg btn-primary" type="button">
+						Sign in
+					</button>
+					<button id="btn-sign" class="btn btn-lg btn-primary" type="button">
+						Registe
+					</button>
+				</div>
+			</form>
+		</div>
+		<div class="col-xs-4"></div>
+	</div>
+</body>	
+</html>
