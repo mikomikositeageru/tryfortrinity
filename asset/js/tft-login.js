@@ -12,10 +12,10 @@ function loginBtn(){
 			"data-id":$("#lgn-id").val(), 
 			"data-pwd":$("#lgn-pwd").val()
 		}, 
-		success: function(respose){
+		success: function(response){
 			//alert(respose);
 			//console.log(respose);
-			if(respose == 'success'){
+			if(response == 'success'){
 				location.href = './index.html';
 				//$('#login_form').attr('action', './main.html');
 				//s$('#login_form').submit();
@@ -69,6 +69,36 @@ function windowResized(){
 		// $('#width').text(texts)
 	}
 	setInterval(test, 100);
+}
+function loginCheck(){
+	var logincheck = function(){
+		$.ajax({
+			type:"POST", 
+			url:"../php/tft-loginchk.php", 
+			success: function(response){
+				var jsonval = response
+			},
+			// dataType:"JSON"
+		});
+	}
+	logincheck()
+}
+function logOut() {
+	// body...
+	var logout = function(){
+		$.ajax({
+			type:"POST",
+			url:"../php/tft-logout.php",
+			success: function(respose){
+				//alert(respose);
+				//console.log(respose);
+				if(respose == 'logout'){
+					location.href = "./index.html";
+				}
+			}
+		});
+	}
+	logout()
 }
 function fadein(data){
 	$(data).delay(500).fadeIn(1000);
