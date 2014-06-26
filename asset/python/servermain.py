@@ -1,16 +1,10 @@
 #!/usr/bin/python
+#!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
-import pymysql 
+import consql
 
-con = pymysql.connect(host='127.0.0.1', port=3306, user='miko', passwd='1q2w3e4r', db='miko')
-
-cur = con.cursor()
-cur.execute("select * from userinfo")
-
-for i in cur:
-	b = str(i)
-	print(b)
-
-cur.close()
-con.close()
+if __name__ == "__main__":
+	con = consql.Mysql()
+	conrst = con.exe('select * from userinfo')
+	con.sqlPrint()
