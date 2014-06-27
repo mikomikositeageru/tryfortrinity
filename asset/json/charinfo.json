@@ -1,7 +1,1 @@
-[
-	{
-		"charname":{
-			"userinfo":"username"
-		}
-	}
-]
+{"miko": {"cntwar": 0, "cntrace": 1, "cntfd2": 0, "cntgod": 0, "charname": "miko", "food1": 0, "cnthunt": 0, "race": "불개미", "dead": 0, "food2": 0, "cntpetr": 0, "queensp": 100, "sumatk": 0, "queenhp": 8500, "like": "곤충", "sumhp": 8500, "others": "", "values": "약탈"}}
